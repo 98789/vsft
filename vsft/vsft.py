@@ -23,14 +23,14 @@ def triangular(nk, N):
 
    return W
 
-def fft(x, N=0, W=exponential, rec_index=32):
+def fft(x, N=1024, W=exponential, rec_index=32):
     """perform fft"""
 
-    x = asarray(x[:N], dtype=complex)
     N = min(N, x.shape[0])
-
     N = 2**int(log2(N))
     rec_index = 2**int(log2(rec_index))
+
+    x = asarray(x[:N], dtype=complex)
 
     N_min = min(N, rec_index)
     
