@@ -8,12 +8,12 @@ fft(x, N=0, W=exponential, rec_index=32)
 
 Inputs:
 
-x: vector of samples (time domain).
-N: Number of outputs.
-W: Weight to be used: exponential, triangular or any user defined weight function.
+x: vector of samples (time domain).  
+N: Number of outputs.  
+W: Weight to be used: exponential, triangular or any user defined weight function.  
 rec_index: Cutoff, an initial vectorized DFT is performed with the first rec_index
            samples. If the size of x is lower than rec_index a vectorized DFT takes
-           place.
+           place.  
 
 Outputs:
 
